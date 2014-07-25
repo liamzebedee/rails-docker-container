@@ -12,3 +12,8 @@ Install [Docker](https://docs.docker.com/installation/) and then [Fig](http://ww
  5. Replace Rails' database config with our own: `$ mv database-new.yml config/database.yml`
  6. Setup the database: Boot the app by running `$ fig up` and in a **separate** terminal run `$ fig run web rake db:create`
  7. Visit `localhost:3000` and boom!
+
+## Usage
+ - To start the container, `$ fig up`. 
+ - To exit, Ctrl+C
+ - **IMPORTANT:** When you change your `Gemfile` or `fig.yml`, run `$ fig build`
