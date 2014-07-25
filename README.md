@@ -3,6 +3,8 @@ Rails Docker container
 
 Using Fig and Docker, this is a simple and easy setup for a container for a Rails 4.1 application that uses Postgres as a database. Based off the [Fig guide for Rails](http://www.fig.sh/rails.html).
 
+If you need help, feel free to create an issue on the repo and I'll get to it. 
+
 ## Install
 Install [Docker](https://docs.docker.com/installation/) and then [Fig](http://www.fig.sh/install.html) if you haven't already. Then follow these instructions (run using sudo on Ubuntu):
  1. Clone this repo and cd to it: `$ git clone https://github.com/liamzebedee/rails-docker-container && cd rails-docker-container`
@@ -17,3 +19,4 @@ Install [Docker](https://docs.docker.com/installation/) and then [Fig](http://ww
  - To start the container, `$ fig up`. 
  - To exit, Ctrl+C
  - **IMPORTANT:** When you change your `Gemfile` or `fig.yml`, run `$ fig build`
+ - To run commands within the container, you may open a shell by running `$ fig run web bash`
